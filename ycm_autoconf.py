@@ -31,3 +31,5 @@ with open(in_path + ".ycm_extra_conf.py", "w") as cfg:
                     final_libs = final_libs + ",\n\t\t\t'" + libs_path + directory + "/'"
 
     cfg.write("def Settings(**kwargs):\n\treturn {\n\t\t'interpreter_path': '" + env_path + "',\n\t\t'sys_path': [" + final_libs + "\n\t\t]\n\t}")
+
+    print("Done")
